@@ -9,8 +9,8 @@
 We’ll try to recognise certain patterns among numerical expressions which
 might help us recognise and classify the numbers provided in the data-set
 (upon splitting the image into three parts) so that we can train the AI for
-further computation.
-Note-We must abstain from using other no.’s for the classification as that
+further computation.  
+Note: We must abstain from using other no.’s for the classification as that
 will reduce the accuracy since the no’s themselves have been classified using
 an imperfect operator-classifier AI. However, we need to come up with as
 many permutation possible in order to increase the size of our training data-
@@ -40,14 +40,14 @@ in order to maximise the accuracy
 
 ```
 Examples-
-```
-1. - operator and first no. is 0 then -k implies second no. is k
+1. '-' operator and first no. is 0 then -k implies second no. is k;
     k∈[1,9]∩z
-2. ÷operator and second digit is one then k implies first no. is k.
+2. '÷' operator and second digit is one then k implies first no. is k.
 - as for the special cases pertaining to each no. I would be mentioning
 them explicitly (given emphasis).
 - another generalisation is for the square of the no.’s, although I have
 mentioned them anyways.
+```
 
 ## 5 Classification of one
 
@@ -115,8 +115,9 @@ mentioned them anyways.
 1. 64 can only be obtained from 8 × 8.
 
 ## Notes  
-1: Keep the data folder in a folder named SoML-50 in the same directory as the train.py file. 
+- The training data can be downloaded from: https://drive.google.com/file/d/1rAYZBd3z5FA9IjxiCPa-PbAGuyWChwdX/view
+- Keep the data folder in a folder named SoML-50 in the same directory as the train.py file. 
 So, the path to images will look something like "./SoML-50/data/x.jpg" 
 and the path to the annotations will be something like "./SoML-50/annotations.csv" 
 
-2: the inference files will ask for the location/path to the directory where test images are stored as a seprate input
+- the inference files will ask for the location/path to the directory where test images are stored as a seprate input
